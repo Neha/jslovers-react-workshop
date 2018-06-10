@@ -1,0 +1,25 @@
+
+    ul.nav {
+        list-style-type: none;
+        
+        li 
+            {
+                display: inline;
+                a{
+                    font-size:16px;
+                    margin:0 10px;
+                    color:#000;
+                    font-weight: 200;
+                    text-decoration:none;
+                    &:first-child{
+                        margin-left:0;
+                    }
+                    &.active{
+                        color: orangered;
+                        text-decoration: underline;
+                        font-weight: 800;
+                    }
+                }
+            }
+       
+    }
