@@ -18,7 +18,7 @@ class Portfolio extends Component {
 
   componentDidMount = () => 
   {
-      axios.get('http://localhost:3000/data.json').then((response) => {
+      axios.get('/data.json').then((response) => {
         console.log(response);
         profileData = response.data;
 
