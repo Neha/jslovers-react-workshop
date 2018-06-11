@@ -10,12 +10,12 @@ import Main from './Main';
 const App = () => {
   return(
     <BrowserRouter>
-    <React.Fragment>
-      <Header name="Neha Sharma" title="neha"/>
-      <Nav />
-      <Main />
-      <Footer />
-    </React.Fragment>
+      <React.Fragment>
+        <Header name="Neha Sharma" title="neha"/>
+        <Nav />
+        <Main />
+        <Footer />
+      </React.Fragment>
     </BrowserRouter>
   )
 }

@@ -17,4 +17,14 @@
     "name" : "FB Clone",
     "description" : "Project One Description",
     "img" : "https://firebasestorage.googleapis.com/v0/b/react-workshop-97ed2.appspot.com/o/sampleThumbnail.jpg?alt=media&token=cffa5ce4-ad17-40be-a0cd-7e793aeb0c9f"
+},
+{
+    "name" : "FB Clone 2",
+    "description" : "Project 4 Description",
+    "img" : "https://firebasestorage.googleapis.com/v0/b/react-workshop-97ed2.appspot.com/o/sampleThumbnail.jpg?alt=media&token=cffa5ce4-ad17-40be-a0cd-7e793aeb0c9f"
+},
+{
+    "name" : "FB Clone 3",
+    "description" : "Project 5 Description",
+    "img" : "https://firebasestorage.googleapis.com/v0/b/react-workshop-97ed2.appspot.com/o/sampleThumbnail.jpg?alt=media&token=cffa5ce4-ad17-40be-a0cd-7e793aeb0c9f"
 }]

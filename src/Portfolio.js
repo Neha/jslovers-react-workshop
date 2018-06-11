@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
-import sampleimg from './images/bluebg.png'
+import ProjectImage from './ProjectImage'
 import axios from 'axios'
-
+import { Link } from 'react-router-dom'
 
 var profileData ;
 
@@ -23,13 +23,13 @@ class Portfolio extends Component {
         profileData = response.data;
 
         this.setState({
-            profileData : profileData
+            profileDataAll : profileData,
+            profileData : profileData.slice(0, 2)
         })
       })
   }
 
   increment = () =>{
-      console.log('click me');
       if(this.state.flag == false) {
         this.setState({
             flag : true,
@@ -45,25 +45,32 @@ class Portfolio extends Component {
       
   }
 
+  loadMore = () => {
+    this.setState({
+        profileData : this.state.profileData
+     })
+  }
+
    render(){
     return(
         <div className="portfolio">
          <h4>Portfolio</h4>
          <ul>
-             { this.state.profileData && this.state.profileData.map((pData, i) => {
-                return(
-                    <li key={i}>
-                    <figure>
-                        <img src={pData.img} alt="" title="" />
-                    </figure>
-                    <h3>{pData.name}</h3>
-                    <p>{pData.description}</p>
-                </li>
-            ) 
+             { this.state.profileData && this.state.profileData.map((pData,i) => {
+                  return(
+                        <ProjectImage nData = {pData} key={i}/>
+                    ) 
+                
              } )
             }
              
          </ul>
+         <button onClick={() => { 
+             this.setState({
+                profileData : this.state.profileDataAll
+             })
+         }}> Click me</button>
+        
          </div>
      )
    }
